@@ -13,10 +13,10 @@ function App() {
   ];
 
   return (
-    <div className='w-full min-h-screen flex flex-col'>
+    <div className='w-full min-h-screen flex flex-col justify-center items-center'>
 
       {/* Navbar */}
-      <div className='w-full h-20 flex justify-between items-center bg-gray-500 text-white px-4 md:px-10 fixed top-0 left-0 z-50'>
+      <div className='w-full h-[100px] flex justify-between items-center bg-gray-500 text-white px-4 md:px-10 '>
         
         {/* Logo */}
         <div className='flex items-center gap-3'>
@@ -45,7 +45,7 @@ function App() {
         <div className='md:hidden'>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <span className="text-3xl">✖</span>
+              <span className="text-3xl ">✖</span>
             ) : (
               <span className="text-3xl">☰</span>
             )}
@@ -76,8 +76,8 @@ function App() {
       )}
 
       {/* Page Content */}
-      <div className='w-full h-228 pt-20'>
-        <Outlet />
+      <div className='w-full h-full flex justify-self-center items-center '>
+        <Outlet className=" w-full h-full " />
       </div>
 
     </div>
