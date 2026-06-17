@@ -30,9 +30,7 @@ function App() {
             R
           </h1>
 
-          <h1 className="font-bold text-2xl md:text-3xl">
-            MD Rubel
-          </h1>
+          <h1 className="font-bold text-2xl md:text-3xl">MD Rubel</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -44,9 +42,7 @@ function App() {
               end={item.Link === "/"}
               className={({ isActive }) =>
                 `px-5 py-2 rounded-lg text-lg font-semibold transition-all duration-300 ${
-                  isActive
-                    ? "bg-yellow-400 text-red-600"
-                    : "hover:bg-gray-700"
+                  isActive ? "bg-yellow-400 text-red-600" : "hover:bg-gray-700"
                 }`
               }
             >
@@ -66,25 +62,28 @@ function App() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed top-20 right-3 z-50 md:hidden w-44 rounded-xl bg-black/80 backdrop-blur-md p-4 shadow-xl">
-          <div className="flex flex-col gap-3">
-            {navBar.map((item) => (
-              <NavLink
-                key={item.id}
-                to={item.Link}
-                end={item.Link === "/"}
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `text-center py-2 rounded-lg font-semibold transition ${
-                    isActive
-                      ? "bg-yellow-400 text-red-600"
-                      : "bg-gray-700 text-white"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
+        <div className="fixed top-20 left-0 w-full z-50 md:hidden">
+          {/* THIS IS THE UPDATED CONTAINER */}
+          <div className="mx-4 rounded-xl bg-black/90 backdrop-blur-md p-4 shadow-xl transition-all duration-300">
+            <div className="flex flex-col gap-3">
+              {navBar.map((item) => (
+                <NavLink
+                  key={item.id}
+                  to={item.Link}
+                  end={item.Link === "/"}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `text-center py-2 rounded-lg font-semibold transition ${
+                      isActive
+                        ? "bg-yellow-400 text-red-600"
+                        : "bg-gray-700 text-white"
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              ))}
+            </div>
           </div>
         </div>
       )}
