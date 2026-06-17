@@ -69,7 +69,7 @@ function App() {
       {isOpen && (
         <div className="fixed top-20 left-0 w-full z-50 md:hidden">
           {/* THIS IS THE UPDATED CONTAINER */}
-          <div className="mx-4 rounded-xl bg-black/90 backdrop-blur-md p-4 shadow-xl transition-all duration-300">
+          <div className="mx-4 rounded-xl bg-black/30 backdrop-blur-md p-4 shadow-xl transition-all duration-300">
             <div className="flex flex-col gap-3">
               {navBar.map((item) => (
                 <NavLink
