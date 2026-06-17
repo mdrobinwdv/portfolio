@@ -54,7 +54,7 @@ function Abolut() {
       className={`${
         scroll
           ? "bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-700 text-white"
-          : "bg-white text-black"
+          : "bg-white bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
       } overflow-x-hidden`}
     >
       <div
@@ -66,7 +66,7 @@ function Abolut() {
             className={`${cardStyle} ${
               scroll
                 ? "bg-white/10 border-white/20"
-                : "bg-white border-gray-200"
+                : "bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-200"
             }`}
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">
@@ -102,7 +102,7 @@ function Abolut() {
             className={`${cardStyle} ${
               scroll
                 ? "bg-white/10 border-white/20"
-                : "bg-white border-gray-200"
+                : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-200"
             }`}
           >
             <div className="flex items-center gap-3 mb-8">
@@ -150,7 +150,7 @@ function Abolut() {
             className={`${cardStyle} ${
               scroll
                 ? "bg-white/10 border-white/20"
-                : "bg-white border-gray-200"
+                : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-200"
             }`}
           >
             <div className="flex items-center gap-3 mb-8">
@@ -178,7 +178,7 @@ function Abolut() {
             className={`${cardStyle} ${
               scroll
                 ? "bg-white/10 border-white/20"
-                : "bg-white border-gray-200"
+                : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-200"
             }`}
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">

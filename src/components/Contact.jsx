@@ -33,7 +33,7 @@ function Contact() {
       className={`w-full min-h-screen flex flex-col items-center justify-center gap-8 p-6 transition-all duration-700 ${
         scroll
           ? "bg-gradient-to-br from-indigo-700 via-purple-600 to-blue-700 text-white"
-          : "bg-gray-50 text-gray-900"
+          : "bg-gray-50 bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
       }`}
     >
       {/* TITLE */}
@@ -56,7 +56,7 @@ function Contact() {
           className={`w-full max-w-3xl rounded-3xl p-8 shadow-2xl border transition-all duration-500 backdrop-blur-md ${
             scroll
               ? "bg-white/10 border-white/20"
-              : "bg-white border-gray-200"
+              : "bg-white bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
           }`}
         >
           {/* INFO */}
@@ -117,7 +117,7 @@ function Contact() {
                 className={`p-4 rounded-xl border outline-none transition-all duration-300 focus:scale-[1.02] ${
                   scroll
                     ? "bg-white/10 text-white border-white/20 placeholder-white/70"
-                    : "bg-gray-100 text-black border-gray-300"
+                    : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white  border-gray-300"
                 }`}
               />
             </Reveal>
@@ -132,7 +132,7 @@ function Contact() {
                 className={`p-4 rounded-xl border outline-none transition-all duration-300 focus:scale-[1.02] ${
                   scroll
                     ? "bg-white/10 text-white border-white/20 placeholder-white/70"
-                    : "bg-gray-100 text-black border-gray-300"
+                    : "bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-300"
                 }`}
               />
             </Reveal>
@@ -146,7 +146,7 @@ function Contact() {
                 className={`p-4 rounded-xl border h-36 outline-none resize-none transition-all duration-300 focus:scale-[1.02] ${
                   scroll
                     ? "bg-white/10 text-white border-white/20 placeholder-white/70"
-                    : "bg-gray-100 text-black border-gray-300"
+                    : "bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white border-gray-300"
                 }`}
               />
             </Reveal>

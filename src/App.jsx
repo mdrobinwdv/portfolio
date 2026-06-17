@@ -21,7 +21,9 @@ function App() {
       {/* Navbar */}
       <div
         className={`w-full h-20 fixed top-0 left-0 z-50 flex items-center justify-between px-4 md:px-10 text-white backdrop-blur-md transition-all duration-500 ${
-          scroll ? "bg-purple-600/60" : "bg-black/60"
+          scroll
+            ? "bg-purple-600/60"
+            : "bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500 text-white"
         }`}
       >
         {/* Logo */}
@@ -41,8 +43,11 @@ function App() {
               to={item.Link}
               end={item.Link === "/"}
               className={({ isActive }) =>
-                `px-5 py-2 rounded-lg text-lg font-semibold transition-all duration-300 ${
-                  isActive ? "bg-yellow-400 text-red-600" : "hover:bg-gray-700"
+                `px-5 py-2 rounded-lg text-lg font-semibold transition-all duration-300 ease-in-out
+                   ${
+                    isActive
+                      ? "bg-cyan-500 text-white shadow-md"
+                      : "text-black hover:bg-cyan-500/20 hover:text-cyan-300"
                 }`
               }
             >
