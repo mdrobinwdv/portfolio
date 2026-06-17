@@ -50,15 +50,15 @@ function Abolut() {
 `;
 
   return (
-    <div className={`${
-        scroll
-          ? "bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-700 text-white"
-          : "bg-white text-black"
-      }`}>
+
+  <div className={`${
+    scroll
+      ? "bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-700 text-white"
+      : "bg-white text-black"
+  } overflow-x-hidden`}>
       <div
-      className={`w-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-20 grid grid-cols-1 xl:grid-cols-2 gap-10
-      `}
-        >
+  className={`w-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-20 grid grid-cols-1 xl:grid-cols-2 gap-10 overflow-x-hidden`}
+>
       {/* ABOUT */}
       <Reveal direction="left">
         <div

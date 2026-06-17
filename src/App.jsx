@@ -89,7 +89,7 @@ function App() {
       )}
 
       {/* Page Content */}
-      <main className="w-full mt-20">
+      <main className="w-full mt-20 overflow-x-hidden">
         <Outlet />
       </main>
     </div>
