@@ -33,7 +33,7 @@ function Contact() {
       className={`w-full min-h-screen flex flex-col items-center justify-center gap-8 p-6 transition-all duration-700 ${
         scroll
           ? "bg-gradient-to-br from-indigo-700 via-purple-600 to-blue-700 text-white"
-          : "bg-gray-50 bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
+          : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
       }`}
     >
       {/* TITLE */}
