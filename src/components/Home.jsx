@@ -6,8 +6,7 @@ import ProjectSlider from "../Home/ProjectSlider";
 import Testimonials from "../Home/component/Testimonials";
 import BackToTop from "../Home/component/BackToTop";
 import CursorGlow from "../Home/component/CursorGlow";
-
-
+import { FaFacebook, FaGithub } from "react-icons/fa";
 
 function Home() {
   const { scroll } = useAuth();
@@ -40,17 +39,37 @@ function Home() {
             </Reveal>
 
             {/* CTA BUTTONS */}
-            <Reveal direction="left">
+            <Reveal direction="up">
               <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
                 <button className="px-6 py-3 rounded-xl bg-blue-600 hover:scale-105 transition">
-                  Hire Me
+                  <a href="/contact">Hire Me</a>
                 </button>
 
                 <a
-                  href="#projects"
+                  href="/about#project"
                   className="px-6 py-3 rounded-xl border border-blue-500 hover:bg-blue-600 hover:text-white transition"
                 >
                   View Projects
+                </a>
+              </div>
+            </Reveal>
+            <Reveal direction="up">
+              <div className=" w-full h-20 mt-5 flex justify-center items-center gap-5 ">
+                <a
+                  href="https://www.facebook.com/robinkhan.robinkhan.946179"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-500 hover:bg-white transition w-10 h-10 flex justify-center items-center text-4xl border rounded-full"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://github.com/mdrobinwdv"
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="hover:text-blue-500 hover:bg-white transition w-10 h-10 flex justify-center items-center text-4xl border rounded-full"
+                >
+                  <FaGithub/>
                 </a>
               </div>
             </Reveal>
@@ -212,11 +231,10 @@ function Home() {
             </div>
           </div>
         </Reveal>
-        <ProjectSlider/>
-        <Testimonials/>
-        <BackToTop/>
-        <CursorGlow/>
-       
+        <ProjectSlider />
+        <Testimonials />
+        <BackToTop />
+        <CursorGlow />
       </div>
     </section>
   );

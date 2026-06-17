@@ -16,7 +16,11 @@ function Reveal({ children, direction = "up" }) {
 
   return (
     <motion.div
-      initial={{opacity: 0,...getDirection(),}}
+      className="w-full flex justify-center"
+      initial={{
+        opacity: 0,
+        ...getDirection(),
+      }}
       whileInView={{
         opacity: 1,
         x: 0,
