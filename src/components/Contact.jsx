@@ -56,7 +56,7 @@ function Contact() {
           className={`w-full max-w-3xl rounded-3xl p-8 shadow-2xl border transition-all duration-500 backdrop-blur-md ${
             scroll
               ? "bg-white/10 border-white/20"
-              : "bg-white bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
+              : " bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-500"
           }`}
         >
           {/* INFO */}
